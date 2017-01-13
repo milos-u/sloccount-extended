@@ -32,7 +32,7 @@ PREFIX=/usr/local
 
 # Set "EXE_SUFFIX" to ".exe" if you're running on Windows, like this:
 # EXE_SUFFIX=.exe
-EXE_SUFFIX=
+EXE_SUFFIX=.exe
 
 # Set this to your C compiler, if it's not "gcc"; a likely alternative is "cc".
 # The "-Wall" option turns on warnings in gcc.  gcc users might also want
@@ -79,9 +79,9 @@ COMPILED_EXECUTABLES= \
    c_count$(EXE_SUFFIX) \
    java_count$(EXE_SUFFIX) \
    lexcount1$(EXE_SUFFIX) \
-   pascal_count$(EXE_SUFFIX) \
-   php_count$(EXE_SUFFIX) \
-   jsp_count$(EXE_SUFFIX) \
+#   pascal_count$(EXE_SUFFIX) \
+#   php_count$(EXE_SUFFIX) \
+#   jsp_count$(EXE_SUFFIX) \
    ml_count$(EXE_SUFFIX)
 
 EXECUTABLES= \
