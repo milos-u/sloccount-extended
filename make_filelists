@@ -131,7 +131,7 @@ do
   fi
 
   echo "Creating filelist for $childname"
-  find "$dir" $follow -type f -print > "${childname}/filelist"
+  find "$dir" $follow -type f -print | grep -v '/migrations/' > "${childname}/filelist"
 
   # If it exists, copy the PROGRAM_LICENSE.
   if [ -s "${dir}/PROGRAM_LICENSE" ]
