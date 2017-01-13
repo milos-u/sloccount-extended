@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!C:/Python27/python.exe
 
 """
 html_template_count - count physical lines of code in HTML files which may or
