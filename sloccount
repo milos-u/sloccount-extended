@@ -1,4 +1,4 @@
-#!/bin/sh
+#!C:/cygwin64/bin/sh.exe
 
 # This is the front-end program "sloccount", part of the
 # SLOCCount tool suite by David A. Wheeler.
@@ -30,6 +30,8 @@
 # more details about the license.
 
 version=2.26
+
+export PATH="/bin/:/usr/bin/:${PATH}"
 
 if [ "$#" -eq 0 ]
 then
@@ -251,7 +253,9 @@ in
   cd $datadir
   case $details
   in
-    y)   get_sloc_details * ;;
+    y)   get_sloc_details *;
+         get_sloc $addlang $showother $filecount $oneprogram $effort_model $schedule_model $personcost $overhead *
+     ;;
     *)   get_sloc $addlang $showother $filecount $oneprogram $effort_model $schedule_model $personcost $overhead * ;;
   esac;;
 esac
